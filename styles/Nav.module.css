@@ -1,0 +1,145 @@
+.navContainer {
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+}
+
+.links {
+    width: 20%;
+}
+
+.links a {
+    color:#676565;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btnBorder{
+    background-image: linear-gradient(left, #FF00B8, #FF655B,#FFC700);
+    width: 167px;
+    height: 32px;
+    border-radius: 16px;
+    margin: 0 55px;
+}
+
+.background {
+    background-color: #fff;
+    width: 163px;
+    height: 27px;
+    border-radius: 16px;
+    border: none;
+    margin: 0 auto;
+}
+
+.btn {
+    /* background-color: #fff; */
+    width: 162px;
+    height: 27px;
+    padding: 3px;
+
+    border-radius: 16px;
+    border: none;
+
+    margin: 0 auto;
+
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+
+    background: linear-gradient(left, #FF00B8, #FF655B,#FFC700);
+    background-size: 100%;
+    background-clip: text;
+    color: transparent; 
+}
+
+.input {
+    width: 4%;
+    height: 50px;       
+    border: 1px solid #000;
+    border-radius: 50px; 
+    margin-left: -200px;
+    position: relative;
+    left: 160px;
+}
+
+.searchIcon {
+    background-color: #141471;
+    width: 4%;
+    height: 50px; 
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    z-index: 1;
+}
+
+.searchIcon i {
+    color: #fff;
+    margin: 10px;
+}
+
+.logo {
+    position: relative;
+    top: 20px
+}
+
+@media (max-width: 1400px){
+    .btnBorder {
+        margin: 0;
+    }
+
+    .input{
+        /* margin-left: 0;
+        left: auto; */
+    }
+
+    .links {
+        width: 25%;
+    }
+
+    .searchIcon {
+        position: relative;
+        left: 35px;
+    }
+}
+
+@media (max-width: 1180px){
+    .searchIcon {
+        display: none;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .links{
+        width: 40%;
+    }
+    .links a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px){
+    .links {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+   .navContainer {
+       padding: 0;
+   }
+
+   .logo {
+       position: absolute;
+       display: flex;
+       align-items: flex-start;
+   }
+
+   .btnBorder {
+       display: none;
+   }
+
+}
