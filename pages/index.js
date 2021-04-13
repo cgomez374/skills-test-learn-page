@@ -1,13 +1,15 @@
 import {useState, useEffect} from 'react'
-import Startup from '../Components/Startups/Startup'
+import Courses from '../Components/Courses/Courses'
+import Category from '../Components/Categories/Category'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import courses from '../public/courses'
+import categories from '../public/categories'
 
 export default function Home() {
   //create state
   const [coursesArr, setCoursesArr] = useState(courses);
-  // const [upcomingStartups, setUpcomingStartups] = useState(upcoming);
+  const [categoriesArr, setCategories] = useState(categories);
 
   return(
     <section>
@@ -18,20 +20,20 @@ export default function Home() {
       <h2 className={styles.subTitle}>my courses</h2>
       <div className={styles.startups + ' row'}>
         {coursesArr.map((item) => (
-          <Startup key={item.projectName} course={item} />
+          <Courses key={item.projectName} course={item} />
         ))}
       </div>
       <h2 className={styles.subTitle}>featured courses</h2>
       <div className={styles.startups + ' row'}>
       {coursesArr.map((item) => (
-          <Startup key={item.projectName} course={item} />
+          <Courses key={item.projectName} course={item} />
         ))}
       </div>
       <h2 className={styles.subTitle}>by category</h2>
       <div className={styles.startups + ' row'}>
-      {/* {upcomingStartups.map((item) => (
-          <Startup key={item.projectName} startup={item} />
-        ))} */}
+      {categoriesArr.map((item, index) => (
+          <Category key={index} category={item} />
+        ))}
       </div>
     </section>
   )

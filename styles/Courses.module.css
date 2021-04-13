@@ -91,6 +91,7 @@
     font-size: 18px;
     color: #fff;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 #rt {
@@ -107,9 +108,11 @@
     margin: 10px auto;
 }
 
+
+
 @media (max-width: 1000px){
     .borderRadient{
-        width: 90%;
+        width: 60%;
         height: auto;
         margin: 10px auto;
     }

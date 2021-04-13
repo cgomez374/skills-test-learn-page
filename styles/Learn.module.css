@@ -1,0 +1,121 @@
+.section {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: capitalize;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 50px;
+}
+
+
+.cardContainer {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    padding: 2px;
+    align-items: center;
+}
+
+.borderRadient {
+    width: 20%;
+    height: 350px;
+    background-image: linear-gradient(left, #FF00B8, #FF655B,#FFC700);
+    border-radius: 97px;
+    margin: 10px;
+    padding-top: 1px;
+}
+
+.card {
+    background-color: #fff;
+    width: 98%;
+    height: 340px;
+    padding: 30px;
+    margin: 4px auto;
+    border-radius: 97px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card h3 {
+    width: 80%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 20px auto;
+}
+
+.card p {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 20px auto;
+}
+
+.card .btn {
+    width: 40%;
+    height: 40px;
+    margin: auto;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    border: none;
+    border-radius: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1150px){
+    .section {
+        font-size: .9rem;
+    }
+    .borderRadient{
+        width: 50%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .card {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: .9rem;
+    }
+
+    .card .btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px){
+    .borderRadient {
+        width: 100%;
+    }
+
+    .card {
+        width: 99%;
+    }
+
+}

@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from '../../styles/Startup.module.css'
+import Link from 'next/link'
+import styles from '../../styles/Courses.module.css'
 
 function Startup({ course }) {
     return (
@@ -12,7 +13,9 @@ function Startup({ course }) {
                 <h4>{course.title}</h4>
                 <p className={styles.pSmall}>{course.desc !== '' ? course.desc : " "}</p>
                 <div className={styles.buttonContainer + ' row'}>
-                    <button id={styles.lt}>learn</button>
+                    <Link href='/learn'>
+                        <button id={styles.lt}>learn</button>
+                    </Link> 
                 </div>
                 <p>{course.completed}/{course.total} Modules</p>
                 <img className={styles.img} src="./progressbar.png" alt="progress bar"/>

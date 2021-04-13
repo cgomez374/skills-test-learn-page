@@ -1,0 +1,87 @@
+.borderRadient {
+    width: 20%;
+    height: 350px;
+    background-image: linear-gradient(left, #FF00B8, #FF655B,#FFC700);
+    border-radius: 97px;
+    margin: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 98%;
+    height: 340px;
+    /* padding: ; */
+    margin: 5px auto;
+    border-radius: 97px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card h4 {
+    width: 80%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+/* categories */
+
+.images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.images img {
+    width: 65%;
+    height: auto;
+}
+
+.categoryImages {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    
+}
+
+@media (max-width: 1000px){
+    .borderRadient{
+        width: 60%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .card {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img {
+        width: 30%;
+        height: auto;
+    }
+
+    .categoryImages {
+        width: 30%;
+    }
+}
+
+@media (max-width: 450px){
+    .borderRadient {
+        width: 100%;
+    }
+
+    .card {
+        width: 99%;
+    }
+
+}
